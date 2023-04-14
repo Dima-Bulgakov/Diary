@@ -52,25 +52,25 @@ class DiaryViewController: UIViewController {
     // MARK: - Methods
     private func setupAppearance() {
         setMainTitle("DIARY")
-        buttonsAction()
+        createAddRightBarButtonItem()
         view.addView(tableView)
         view.addView(createFirstNoteButton)
     }
     
-    // Create add right bar button item
-    func buttonsAction() {
+    // Create addRightBarButtonItem
+    func createAddRightBarButtonItem() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
                                                             target: self,
-                                                            action: #selector(addButtonAction))
+                                                            action: #selector(AddRightBarButtonItemAction))
         navigationItem.rightBarButtonItem?.tintColor = Helper.Color.Main.light
     }
     
-    @objc private func addButtonAction() {
+    @objc private func AddRightBarButtonItemAction() {
         let vc = NoteViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    // CreateFirstNoteButton Action
+    // Create FirstNoteButtonAction
     @objc func createFirstNoteButtonAction() {
         let noteVC = NoteViewController()
         navigationController?.pushViewController(noteVC, animated: true)

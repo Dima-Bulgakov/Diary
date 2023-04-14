@@ -114,6 +114,7 @@ extension ThemeController: UICollectionViewDelegate, UICollectionViewDataSource 
         }, completion: nil)
     }
 
+    // Tapped animation in cell of collectionView
     func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)!
         UIView.animate(withDuration: 0.05, delay: 0, options: [.curveEaseOut, .allowUserInteraction], animations: {
@@ -122,6 +123,7 @@ extension ThemeController: UICollectionViewDelegate, UICollectionViewDataSource 
         }, completion: nil)
     }
     
+    // Setup sizes for collectionView
     static func createLayout() -> UICollectionViewCompositionalLayout {
         
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalWidth(0.5))
@@ -138,14 +140,12 @@ extension ThemeController: UICollectionViewDelegate, UICollectionViewDataSource 
         
         return layout
     }
-
 }
 
-// Extension: Methods for change of color in theme
+// MARK: - Extension: Methods for change of color in theme
 extension ThemeController {
     
     func changeColor(dark: UIColor, middle: UIColor, bright: UIColor, light: UIColor) {
-        
         Helper.Color.Main.dark = dark
         Helper.Color.Main.middle = middle
         Helper.Color.Main.bright = bright
@@ -188,7 +188,7 @@ extension ThemeController {
     }
 }
 
-// Extension: Setup constraints
+// MARK: - Extension: Setup constraints
 private extension ThemeController {
     
     func setupConstraints() {

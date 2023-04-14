@@ -31,7 +31,6 @@ class SettingsViewController: UITableViewController {
         
         loadSettings()
         setupAppearance()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,6 +54,7 @@ class SettingsViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingTableViewCell.identifier, for: indexPath) as? SettingTableViewCell else {
             return UITableViewCell()
         }
+        
         // Cell apearance
         cell.textLabel?.textColor = Helper.Color.Main.light
         cell.selectionStyle = .none
@@ -105,7 +105,7 @@ class SettingsViewController: UITableViewController {
         return headerView
     }
     
-    
+    // Button action go to ThemeVC
     @objc private func themeButtonTapped() {
         let vc = ThemeController()
         navigationController?.pushViewController(vc, animated: true)

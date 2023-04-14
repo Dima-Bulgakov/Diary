@@ -43,17 +43,19 @@ class NoteViewController: UIViewController {
         noteView.dateTextField.text = dateString
     }
   
-    // Create SaveButton + apearance
+    // Create SaveButton + Appearance
     private func createSaveButton() {
         let saveButton = UIBarButtonItem(barButtonSystemItem: .save,
                                          target: self,
                                          action: #selector(saveButtonAction))
-        saveButton.tintColor = Helper.Color.Main.light // Set button colour
+        // Set button colour
+        saveButton.tintColor = Helper.Color.Main.light
         navigationItem.rightBarButtonItem = saveButton
         // Set the colour of the navigation bar
         navigationController?.navigationBar.tintColor = Helper.Color.Main.light
     }
     
+    // Button to save the data
     @objc private func saveButtonAction() {
         navigationController?.popViewController(animated: true)
         

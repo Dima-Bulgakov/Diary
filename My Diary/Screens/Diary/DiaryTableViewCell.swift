@@ -54,6 +54,7 @@ class DiaryTableViewCell: UITableViewCell {
         contentView.addView(offsetView)
     }
     
+    // Reuse cells
     override func prepareForReuse() {
         super.prepareForReuse()
         self.accessoryType = .none

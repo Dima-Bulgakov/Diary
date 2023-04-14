@@ -10,7 +10,12 @@ import UIKit
 class NoteView: UIView {
     
     // MARK: - Properties
-    let datePicker = UIDatePicker()
+    let datePicker: UIDatePicker = {
+        let picker = UIDatePicker()
+        picker.datePickerMode = .date
+        picker.preferredDatePickerStyle = .wheels
+        return picker
+    }()
     
     let titleTextField: UITextField = {
         let textField = UITextField()
@@ -77,7 +82,7 @@ class NoteView: UIView {
     private func setupAppearance() {
         
         addTap()
-        configDatePicker()
+        dateTextField.inputView = datePicker
         
         titleTextField.delegate = self
         dateTextField.delegate = self
@@ -85,12 +90,6 @@ class NoteView: UIView {
         addView(titleTextField)
         addView(dateTextField)
         addView(textView)
-    }
-    
-    private func configDatePicker() {
-        datePicker.datePickerMode = .date
-        datePicker.preferredDatePickerStyle = .wheels
-        dateTextField.inputView = datePicker
     }
     
     // Create Hide Keyboard

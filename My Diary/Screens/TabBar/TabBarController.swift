@@ -15,7 +15,6 @@ class TabBarController: UITabBarController {
         
         setupControllers()
         setupAppearance()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -23,10 +22,10 @@ class TabBarController: UITabBarController {
         view.backgroundColor = Helper.Color.Main.dark
     }
 
-
     
     // MARK: - Methods
-    private func setupControllers() { // Methods for setup controllers to in TabBarControllers
+    // Methods for setup controllers to in TabBarControllers
+    private func setupControllers() {
         let mainVC = createControllers(inputVC: DiaryViewController(),
                                        image: Helper.Image.TabBar.diary,
                                        title: Helper.String.TabBar.diary)
@@ -35,7 +34,6 @@ class TabBarController: UITabBarController {
                                            title: Helper.String.TabBar.settings)
         viewControllers = [mainVC, settingsVC]
     }
-
     
     // Method for create new controller
     private func createControllers(inputVC: UIViewController, image: UIImage, title: String) -> UIViewController {
@@ -48,20 +46,19 @@ class TabBarController: UITabBarController {
     }
     
     private func setupAppearance() {
-        // Установить цвет фона для UITabBar
+        // Setup backgroung color for UITabBar
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.configureWithOpaqueBackground()
         tabBarAppearance.backgroundColor = Helper.Color.Main.dark
         tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
         
-        // Установить цвет фона для UINavigationBar
+        // Setup backgroung color for UINavigationBar
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.configureWithOpaqueBackground()
         navigationBarAppearance.backgroundColor = Helper.Color.Main.dark
         navigationItem.standardAppearance = navigationBarAppearance
         navigationItem.scrollEdgeAppearance = navigationBarAppearance
     }
-
 }
 

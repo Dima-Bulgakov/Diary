@@ -26,7 +26,6 @@ class ThemeCollectionViewCell: UICollectionViewCell {
         
         contentView.addView(imageView)
         contentView.clipsToBounds = true
-
     }
     
     required init?(coder: NSCoder) {
