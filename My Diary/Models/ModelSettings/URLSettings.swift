@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// MARK: - Add Privacy Policy
 class URLSettings {
     
     static let shared = URLSettings()
