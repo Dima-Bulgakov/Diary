@@ -17,11 +17,6 @@ class TabBarController: UITabBarController {
         setupAppearance()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        view.backgroundColor = Helper.Color.Main.dark
-    }
-
     
     // MARK: - Methods
     // Methods for setup controllers to in TabBarControllers
@@ -46,6 +41,8 @@ class TabBarController: UITabBarController {
     }
     
     private func setupAppearance() {
+        view.backgroundColor = Helper.Color.Main.dark
+        
         // Setup backgroung color for UITabBar
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.configureWithOpaqueBackground()

@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         content.body = "How was your day?"
         content.sound = UNNotificationSound.default
         
-        let date = DateComponents(hour: 10, minute: 37) // Здесь задайте желаемое время уведомления
+        let date = DateComponents(hour: 20, minute: 00) // Здесь задайте желаемое время уведомления
         
         let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
         let request = UNNotificationRequest(identifier: "dailyNotification", content: content, trigger: trigger)
