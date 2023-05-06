@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,21 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zky-q9-Sn6">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.13818365339999999" green="0.15603116149999999" blue="0.1882401705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="USp-Ea-e3L">
-                                <rect key="frame" x="146.66666666666666" y="376" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="USp-Ea-e3L">
+                                <rect key="frame" x="121.66666666666669" y="351" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="LEq-c2-yLJ"/>
-                                    <constraint firstAttribute="height" constant="100" id="W5h-or-0xJ"/>
+                                    <constraint firstAttribute="width" constant="150" id="LEq-c2-yLJ"/>
+                                    <constraint firstAttribute="height" constant="150" id="W5h-or-0xJ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.1306077242" green="0.1559132338" blue="0.1921623647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="USp-Ea-e3L" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Ote-AI-0fh"/>
                             <constraint firstItem="USp-Ea-e3L" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pN2-r8-Qou"/>
@@ -43,9 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="512" height="512"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="appstore" width="1024" height="1024"/>
     </resources>
 </document>

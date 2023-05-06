@@ -25,7 +25,6 @@
 		3260442B29DED7ED0045FBA0 /* ThemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260442A29DED7ED0045FBA0 /* ThemeController.swift */; };
 		3260442F29DEDA3D0045FBA0 /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260442E29DEDA3D0045FBA0 /* ThemeCollectionViewCell.swift */; };
 		3260443329DEF8E10045FBA0 /* Hex Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260443229DEF8E10045FBA0 /* Hex Extension.swift */; };
-		327200BF29FCE50C002FF101 /* APISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327200BE29FCE50C002FF101 /* APISettings.swift */; };
 		32B858F229FE4FC9006775F2 /* URLSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B858F129FE4FC9006775F2 /* URLSettings.swift */; };
 		32F6274629E7E06B00BB7EE3 /* FaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6274529E7E06B00BB7EE3 /* FaceID.swift */; };
 /* End PBXBuildFile section */
@@ -51,7 +50,6 @@
 		3260442A29DED7ED0045FBA0 /* ThemeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeController.swift; sourceTree = "<group>"; };
 		3260442E29DEDA3D0045FBA0 /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3260443229DEF8E10045FBA0 /* Hex Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hex Extension.swift"; sourceTree = "<group>"; };
-		327200BE29FCE50C002FF101 /* APISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISettings.swift; sourceTree = "<group>"; };
 		32B858F129FE4FC9006775F2 /* URLSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSettings.swift; sourceTree = "<group>"; };
 		32F6274529E7E06B00BB7EE3 /* FaceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +96,6 @@
 				325D4DE729D96E970063DFBD /* Helper */,
 				325D4DD129D963B10063DFBD /* Screens */,
 				325D4DD529D964880063DFBD /* Models */,
-				327200BE29FCE50C002FF101 /* APISettings.swift */,
 			);
 			path = "My Diary";
 			sourceTree = "<group>";
@@ -304,7 +301,6 @@
 				325D4DE229D966630063DFBD /* NoteView.swift in Sources */,
 				325D4DBE29D961C30063DFBD /* SceneDelegate.swift in Sources */,
 				3260442B29DED7ED0045FBA0 /* ThemeController.swift in Sources */,
-				327200BF29FCE50C002FF101 /* APISettings.swift in Sources */,
 				3260441629DC7CFC0045FBA0 /* SettingTableViewCell.swift in Sources */,
 				325D4DE029D966570063DFBD /* NoteViewController.swift in Sources */,
 				3260441829DD45370045FBA0 /* ModelDiary.swift in Sources */,
