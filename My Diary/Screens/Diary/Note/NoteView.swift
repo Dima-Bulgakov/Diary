@@ -47,7 +47,7 @@ class NoteView: UIView {
                 
         let currentDate = Date()
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.dateFormat = "dd.MM.yyyy"
         let dateString = dateFormatter.string(from: currentDate)
         textField.text = dateString
         return textField

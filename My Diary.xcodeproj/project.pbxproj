@@ -25,6 +25,7 @@
 		3260442B29DED7ED0045FBA0 /* ThemeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260442A29DED7ED0045FBA0 /* ThemeController.swift */; };
 		3260442F29DEDA3D0045FBA0 /* ThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260442E29DEDA3D0045FBA0 /* ThemeCollectionViewCell.swift */; };
 		3260443329DEF8E10045FBA0 /* Hex Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3260443229DEF8E10045FBA0 /* Hex Extension.swift */; };
+		32B858F229FE4FC9006775F2 /* URLSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B858F129FE4FC9006775F2 /* URLSettings.swift */; };
 		32F6274629E7E06B00BB7EE3 /* FaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6274529E7E06B00BB7EE3 /* FaceID.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		3260442A29DED7ED0045FBA0 /* ThemeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeController.swift; sourceTree = "<group>"; };
 		3260442E29DEDA3D0045FBA0 /* ThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3260443229DEF8E10045FBA0 /* Hex Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hex Extension.swift"; sourceTree = "<group>"; };
+		32B858F129FE4FC9006775F2 /* URLSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSettings.swift; sourceTree = "<group>"; };
 		32F6274529E7E06B00BB7EE3 /* FaceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 		325D4DD529D964880063DFBD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				32622D4A29FBC2C7000A2DD2 /* ModelSettings */,
 				325D4DD729D964D10063DFBD /* ModelDiary */,
 				325D4DD629D964B80063DFBD /* Extensions */,
 			);
@@ -200,6 +203,14 @@
 				3260442E29DEDA3D0045FBA0 /* ThemeCollectionViewCell.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		32622D4A29FBC2C7000A2DD2 /* ModelSettings */ = {
+			isa = PBXGroup;
+			children = (
+				32B858F129FE4FC9006775F2 /* URLSettings.swift */,
+			);
+			path = ModelSettings;
 			sourceTree = "<group>";
 		};
 		32F6274429E7E05900BB7EE3 /* FaceID */ = {
@@ -295,6 +306,7 @@
 				3260441829DD45370045FBA0 /* ModelDiary.swift in Sources */,
 				325D4DDE29D966140063DFBD /* DiaryTableViewCell.swift in Sources */,
 				325D4DEB29D970450063DFBD /* UIViewController Extension.swift in Sources */,
+				32B858F229FE4FC9006775F2 /* URLSettings.swift in Sources */,
 				325D4DDA29D965AC0063DFBD /* DiaryViewController.swift in Sources */,
 				3260442F29DEDA3D0045FBA0 /* ThemeCollectionViewCell.swift in Sources */,
 			);
@@ -438,20 +450,23 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YN6MGUXLHK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "My Diary/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Diary;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow to continue with face id.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appsite.My-Diary";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appsite.My-Diary123";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -470,20 +485,24 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YN6MGUXLHK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "My Diary/Resources/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Diary;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please allow to continue with face id.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.appsite.My-Diary";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appsite.My-Diary123";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

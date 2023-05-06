@@ -77,14 +77,26 @@ class SettingsViewController: UITableViewController {
             cell.switchCell.isHidden = true
             cell.themeButton.isHidden = false
             cell.themeButton.addTarget(self, action: #selector(themeButtonTapped), for: .touchUpInside)
+        case 3:
+            cell.labelCell.text = "Privacy policy"
+            cell.switchCell.isHidden = true
         default:
             break
         }
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 3:
+            URLSettings.shared.freeprivacypolicy()
+        default:
+            break
+        }
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
