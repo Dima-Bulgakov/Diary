@@ -29,6 +29,7 @@ class NoteViewController: UIViewController {
     
     // MARK: - Methods
     private func setupAppearance() {
+        view.backgroundColor = Helper.Color.Main.dark
         setMainTitle("NOTE")
         createSaveButton()
         noteView.datePicker.addTarget(self, action: #selector(datePickerChanged), for: .valueChanged)
