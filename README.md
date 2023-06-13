@@ -2,7 +2,7 @@
 ![Logo](https://github.com/Dima-Bulgakov/Diary/blob/main/titleImage.png?raw=true)
 
 
-# Diary.
+# Diary
 This iOS app is intended to provide an overview of one‘s own daily activities. The app should help you get to know yourself better, enable daily self-reflection and save memories.
 
 
